@@ -18,15 +18,13 @@
   font-family: Arial, sans-serif;
 }
 
-/* Logo */
 .logo {
   color: #3478c9;
-  font-size: 19px;
+  font-size: 24px;
   font-weight: bold;
   letter-spacing: 2px;
 }
 
-/* Search box */
 .search-box {
   display: flex;
   height: 27px;
@@ -55,7 +53,6 @@
   font-size: 11px;
 }
 
-/* Navigation actions */
 .nav-actions {
   display: flex;
   align-items: center;
@@ -67,7 +64,7 @@
   border: 1px solid #e1e1e1;
   border-radius: 3px;
   padding: 6px 8px;
-  font-size: 9px;
+  font-size: 12px;
   color: #555;
   white-space: nowrap;
   cursor: pointer;

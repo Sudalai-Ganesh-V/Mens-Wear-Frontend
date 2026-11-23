@@ -6,9 +6,9 @@ function CategoryBanner() {
 
       <div className="breadcrumb">
         <span>Home</span>
-        <span>›</span>
+        <span> › </span>
         <span>Library</span>
-        <span>›</span>
+        <span> › </span>
         <strong>Data</strong>
       </div>
     </section>
