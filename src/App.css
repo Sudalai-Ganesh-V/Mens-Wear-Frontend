@@ -1,0 +1,16 @@
+.category-banner {
+  background-color: #3972c7;
+  color: white;
+  padding: 20px 40px;
+  height: 70px;
+}
+
+.category-banner h2 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.category-banner p {
+  font-size: 10px;
+  margin-top: 5px;
+}
