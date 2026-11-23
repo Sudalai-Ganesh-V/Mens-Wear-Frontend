@@ -1,17 +1,10 @@
 
 function CategoryBanner() {
   return (
-    <section className="category-banner">
+    <div className="category-banner">
       <h2>Men's wear</h2>
-
-      <div className="breadcrumb">
-        <span>Home</span>
-        <span> › </span>
-        <span>Library</span>
-        <span> › </span>
-        <strong>Data</strong>
-      </div>
-    </section>
+      <p>Home › Library › Data</p>
+    </div>
   );
 }
 

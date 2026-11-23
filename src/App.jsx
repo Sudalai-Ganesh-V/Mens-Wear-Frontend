@@ -1,20 +1,20 @@
-import React from "react";
-import "./App.css";
+
 import Navbar from "./components/Navbar";
 import CategoryBanner from "./components/CategoryBanner";
 import FilterSidebar from "./components/FilterSidebar";
+import "./App.css";
 
 function App() {
   return (
-    <div className="page">
-
+    <>
       <Navbar />
 
       <CategoryBanner />
 
-      <FilterSidebar />
-
-    </div>
+      <main className="catalog-layout">
+        <FilterSidebar />
+      </main>
+    </>
   );
 }
 
