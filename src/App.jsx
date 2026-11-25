@@ -1,21 +1,47 @@
+import { Navigate, Route, Routes } from 'react-router-dom';
+import HotelListPage from './pages/HotelListPage';
+import HotelFormPage from './pages/HotelFormPage';
+import HotelDetailPage from './pages/HotelDetailPage';
+import LoginPage from './pages/LoginPage';
+import ProtectedRoute from './components/ProtectedRoute';
 
-import Navbar from "./components/Navbar";
-import CategoryBanner from "./components/CategoryBanner";
-import FilterSidebar from "./components/FilterSidebar";
-import "./App.css";
-
-function App() {
+export default function App() {
   return (
-    <>
-      <Navbar />
-
-      <CategoryBanner />
-
-      <main className="catalog-layout">
-        <FilterSidebar />
-      </main>
-    </>
+    <Routes>
+      <Route path="/login" element={<LoginPage />} />
+      <Route
+        path="/"
+        element={
+          <ProtectedRoute>
+            <HotelListPage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/hotels/new"
+        element={
+          <ProtectedRoute>
+            <HotelFormPage mode="add" />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/hotels/:id"
+        element={
+          <ProtectedRoute>
+            <HotelDetailPage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/hotels/:id/edit"
+        element={
+          <ProtectedRoute>
+            <HotelFormPage mode="edit" />
+          </ProtectedRoute>
+        }
+      />
+      <Route path="*" element={<Navigate to="/" replace />} />
+    </Routes>
   );
 }
-
-export default App;

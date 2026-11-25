@@ -1,0 +1,6 @@
+{
+  "name": "StayDesk",
+  "description": "A modern hotel management application featuring responsive property cards, title search, price range filtering, configurable pagination, and localStorage persistence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
